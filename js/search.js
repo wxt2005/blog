@@ -34,7 +34,7 @@ $(function() {
                 for (var i = 0, l = json.length; i < l; i++) {
                     if ((flag === 'tag' && json[i].tags.indexOf(keyword) !== -1) ||
                         (flag === 'cat' && json[i].categories.indexOf(keyword) !== -1) ||
-                        (flag === 'title' && json[i].title.indexOf(keyword) !== -1) ||
+                        (flag === 'title' && (new RegExp(keyword.replace('\\', '\\\\'), 'gi')).test(json[i].title)) ||
                         flag === 'all') {
                         html += buildHtml(json[i]);
                     }
