@@ -10,7 +10,7 @@ layout: default
                     分类:
                     <ul>
                         {% for category in page.categories %}
-                        <li><a href="/search?cat={{ category }}">{{ category }}</a></li>
+                        <li><a href="{{site.baseurl}}/search?cat={{ category }}">{{ category }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>
@@ -18,7 +18,7 @@ layout: default
                     标签:
                     <ul>
                         {% for tag in page.tags %}
-                        <li><a href="/search?tag={{ tag }}">{{ tag }}</a></li>
+                        <li><a href="{{site.baseurl}}/search?tag={{ tag }}">{{ tag }}</a></li>
                         {% endfor %}
                     </ul>
                 </div>

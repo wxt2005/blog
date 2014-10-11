@@ -5,16 +5,16 @@
     </div>
     <nav class="mini-nav">
         <ul>
-            <li class="home"><a href="{{ "/" | prepend: site.baseurl }}">首页</a></li>
+            <li class="home"><a href="{{site.baseurl}}/">首页</a></li>
             <li class="search drop"><a href="#">搜索</a></li>
             <li class="category drop"><a href="#">分类</a></li>
             <li class="tag drop"><a href="#">标签</a></li>
-            <li class="about"><a href="{{ "/about.html" | prepend: site.baseurl }}">关于</a></li>
+            <li class="about"><a href="{{site.baseurl}}/about.html">关于</a></li>
         </ul> 
     </nav>
     <nav class="main-nav row">
         <ul class="left">
-            <li class="home"><a href="{{ "/" | prepend: site.baseurl }}">首页</a></li>
+            <li class="home"><a href="{{site.baseurl}}/">首页</a></li>
             <li class="tag drop">
                 <a href="#">标签</a>
                 <ul class="drop-menu">
@@ -41,7 +41,7 @@
             </li>
         </ul>
         <ul class="right">
-            <li class="about"><a href="{{ "/about.html" | prepend: site.baseurl }}">关于</a></li>
+            <li class="about"><a href="{{site.baseurl}}/about.html">关于</a></li>
             <li class="search"><form action="{{site.baseurl}}/search" method="get"><input type="search" placeholder="搜索文章标题" name="title"></form></li>
         </ul>
     </nav>
