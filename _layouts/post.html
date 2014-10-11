@@ -42,12 +42,12 @@ layout: default
         </article>
         <div class="control">
             {% if page.previous != nil %}
-            <div class="previous"><a href="{{ page.previous.url }}">上一篇</a></div>
+            <div class="previous"><a href="{{site.baseurl}}{{ page.previous.url }}">上一篇</a></div>
             {% else %}
             <div class="previous disabled"><a href="#">上一篇</a></div>
             {% endif %}
             {% if page.next != nil %}
-            <div class="next"><a href="{{ page.next.url }}">下一篇</a></div>
+            <div class="next"><a href="{{site.baseurl}}{{ page.next.url }}">下一篇</a></div>
             {% else %}
             <div class="next disabled"><a href="#">下一篇</a></div>
             {% endif %}
