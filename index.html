@@ -27,7 +27,7 @@ layout: default
                 {% endif %}
                 <div class="comments">
                     评论:
-                    <span class="count"><a href="{{ post.url }}/#disqus_thread"></a></span>
+                    <span class="count"><a href="{{site.baseurl}}{{ post.url }}/#disqus_thread"></a></span>
                 </div>
                 <div class="time-stamp">
                     <span class="date">{{ post.date | date: "%Y年%-m月%-d日" }}</span>
